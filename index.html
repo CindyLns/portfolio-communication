@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        title: ['Playfair Display', 'serif'],
+                        corps: ['Quicksand', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Cindy Lionis</title>
+</head>
+<body class="font-corps">
+    <header class="sticky top-0 z-20 bg-white">
+            <div class="relative flex items-center justify-between gap-4 px-4 py-3 md:px-8 md:py-6 lg:px-[6.5rem]">
+                 <a href="index.html">
+                    <svg id="Calque_2" class="w-16 md:w-32" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 367.5 195.7">
+                    <defs>
+                        <style>
+                        .header-logo-cls-1 {
+                            fill: #1c37cd;
+                            stroke-width: 0px;
+                        }
+
+                        .header-logo-cls-2 {
+                            letter-spacing: -.06em;
+                        }
+
+                        .header-logo-cls-3 {
+                            letter-spacing: -.08em;
+                        }
+
+                        .header-logo-cls-4 {
+                            font-family: PlayfairDisplay-Bold, 'Playfair Display';
+                            font-size: 100px;
+                            font-weight: 700;
+                        }
+
+                        .header-logo-cls-5 {
+                            letter-spacing: -.06em;
+                        }
+
+                        .header-logo-cls-6 {
+                            letter-spacing: -.07em;
+                        }
+
+                        .header-logo-cls-7 {
+                            letter-spacing: -.06em;
+                        }
+                        </style>
+                    </defs>
+                    <g id="Calque_3" data-name="Calque 3">
+                        <g>
+                        <path class="header-logo-cls-1" d="m3.54,101.27h46.52v28.01s1.48,39.07-46.52,44.84v-15.29s12-5.49,12-13.65H3.54v-43.9Z"/>
+                        <text class="header-logo-cls-4" transform="translate(0 85.4)"><tspan class="header-logo-cls-7" x="0" y="0">CIN</tspan><tspan class="header-logo-cls-3" x="163.5" y="0">D</tspan><tspan class="header-logo-cls-6" x="232.69" y="0">Y</tspan></text>
+                        <text class="header-logo-cls-4" transform="translate(55 171.4)"><tspan class="header-logo-cls-7" x="0" y="0">L</tspan><tspan class="header-logo-cls-5" x="55.5" y="0">IO</tspan><tspan class="header-logo-cls-2" x="159.6" y="0">NIS</tspan></text>
+                        </g>
+                    </g>
+                    </svg>
+                </a>
+                <button type="button" class="menu-icon relative h-10 w-10 rounded-md md:hidden" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu" data-menu-button>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-opacity duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                </button>
+                <nav id="main-menu" class="absolute left-4 right-4 top-full z-10 hidden rounded-b-2xl bg-white p-4 shadow-lg md:static md:block md:bg-transparent md:p-0 md:shadow-none">
+                    <ul class="flex flex-col gap-4 text-sm font-semibold md:flex-row md:gap-8 md:text-xl lg:m-0">
+                        <li>
+                            <a href="#projets" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Projets</a>
+                        </li>
+                        <li>
+                            <a href="#aPropos" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">À propos</a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <section class="flex flex-col items-start justify-between gap-10 px-4 pt-10 pb-24 md:px-8 md:pt-28 md:pb-36 lg:flex-row lg:items-center lg:px-[6.5rem] lg:pb-40">
+            <div class="flex flex-col items-start md:flex-row">
+                <div class="circleMove relative shrink-0 font-bold lg:-translate-y-16">
+                    <svg viewBox="0 0 300 300" width="200" height="200" class="absolute -top-8 -left-10 lg:relative lg:-top-0 lg:-left-0">
+                        <defs>
+                            <path
+                            id="circlePath"
+                            d="M150,150
+                                m-80,0
+                                a80,80 0 1,1 160,0
+                                a80,80 0 1,1 -160,0" />
+                        </defs>
+
+                        <text font-size="15" letter-spacing="3" fill="#1c37cd">
+                            <textPath href="#circlePath">
+                            ✦ UI/UX DESIGNER ✦ FRONT-END ✦ PERFORMANCE 
+                            </textPath>
+                        </text>
+                    </svg>
+                    
+                </div>
+                <div class="max-w-4xl mt-[73px] md:mt-0">
+                    <h1 class="pt-[10px] indent-[12%] tracking-[3px] text-4xl font-semibold md:text-5xl lg:pt-0 lg:indent-0 lg:tracking-normal lg:text-6xl lg:leading-[1.2]">Développeuse Front-end & UI/UX Designer</h1>
+                    <p class="mt-6 text-base font-medium leading-relaxed md:mt-8 md:text-lg lg:text-xl">Je conçois et développe des <strong>interfaces web performantes, intuitives et centrées sur l'utilisateur</strong>. De la recherche UX à l'intégration front-end, je crée des expériences fluides, un contenu clair et des parcours optimisés pour <strong>favoriser la conversion</strong>.</p>
+                    <a href="#projets" class="mt-8 inline-block px-6 py-3 bg-[#1a1b1f] border text-white font-medium uppercase rounded-full hover:bg-[#ffff] hover:border hover:border-black hover:text-black transition-colors duration-300 md:mt-10">Voir mes projets</a>
+                </div>
+            </div>
+            <img src="assets/undraw_focused-dev_gqoa.svg" class="hidden lg:block lg:max-w-lg" alt="développeuse sur un ordinateur"/>
+        </section>
+        <section id="projets" class="section-sticky">
+            <div class="bg-black text-white rounded-t-[2rem] px-4 py-14 md:px-8 md:py-20 lg:px-[6.5rem] lg:rounded-t-[8rem]">
+                <h2 class="font-title text-3xl font-semibold lg:text-4xl">Sélection de projets</h2>
+                <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 lg:mt-16">
+                    <a href="cache-coeur.html" class="group flex flex-col pb-4 2xl:pb-0">
+                        <div class="mb-4 overflow-hidden rounded-[2rem]">
+                            <img src="assets/cachecoeur.png" class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-110 2xl:aspect-[18/9]" alt="projet Cache Cœur"/>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Cache Cœur</h3>
+                        <p class="font-light text-base lg:text-lg">Shopify • UX/UI Design • Front-end</p>
+                    </a>
+                    <a href="mouratoglou.html" class="group flex flex-col pb-4 2xl:pb-0">
+                        <div class="mb-4 overflow-hidden rounded-[2rem]">
+                            <img src="assets/mouratoglou.png" class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-110 2xl:aspect-[18/9]" alt="projet Mouratoglou"/>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Mouratoglou</h3>
+                        <p class="font-light text-base lg:text-lg">Shopify • UX/UI Design • Front-end</p>
+                    </a>
+                    <a href="herige.html" class="group flex flex-col pb-4 2xl:pb-0">
+                        <div class="mb-4 overflow-hidden rounded-[2rem]">
+                            <img src="assets/herige.png" class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-110 2xl:aspect-[18/9]" alt="projet Hérige"/>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Hérige</h3>
+                        <p class="font-light text-base lg:text-lg">WordPress • UX/UI Design</p>
+                    </a>
+                    <a href="temo.html" class="group flex flex-col pb-4 2xl:pb-0">
+                        <div class="mb-4 overflow-hidden rounded-[2rem]">
+                            <img src="assets/temo-2.png" class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-110 2xl:aspect-[18/9]" alt="projet Temo"/>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Temo</h3>
+                        <p class="font-light text-base lg:text-lg">Shopify • UX/UI Design • Front-end</p>
+                    </a>
+                    <a href="argent-bank.html" class="group flex flex-col pb-4 2xl:pb-0">
+                        <div class="mb-4 overflow-hidden rounded-[2rem]">
+                            <img src="assets/bankApi.png" class="w-full aspect-[4/3] object-cover object-[50%_80%] transition-transform duration-500 group-hover:scale-110 2xl:aspect-[18/9]" alt="projet Argent Bank"/>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Argent Bank</h3>
+                        <p class="font-light text-base lg:text-lg">React • Redux • API REST</p>
+                    </a>
+                    <a href="hrnet.html" class="group flex flex-col pb-4 2xl:pb-0">
+                        <div class="mb-4 overflow-hidden rounded-[2rem]">
+                            <img src="assets/hrnet.png" class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-110 2xl:aspect-[18/9]" alt="projet HRnet"/>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">HRnet</h3>
+                        <p class="font-light text-base lg:text-lg">React • Redux • npm</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section bg-white rounded-t-[8rem]">
+            <div class="px-4 pt-16 md:px-8 md:py-20 lg:px-[6.5rem]">
+                <h2 class="font-title text-3xl font-semibold mb-8 lg:text-4xl">Savoir-faire</h2>
+                <article class="grid grid-cols-1 gap-4 border-t border-gray-400 py-6 lg:grid-cols-[minmax(0,_0.9fr)_minmax(0,_1.1fr)] lg:gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold lg:text-3xl">UI/UX Design</h3>
+                        <p class="font-medium">Comprendre les utilisateurs, structurer les parcours, concevoir des interfaces efficaces.</p>
+                    </div>
+                    <ul class="flex flex-col self-center">
+                        <li class="border-b border-gray-400 py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Création de wireframes et de maquettes sur Figma</span>
+                            <span class="px-6 py-2 border border-black font-medium uppercase rounded-full text-sm lg:text-base">UX</span>
+                        </li>
+                        <li class="border-b border-gray-400 py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Design responsive (mobile, tablette, desktop)</span>
+                            <div class="flex items-center gap-2">
+                                <span class="px-6 py-2 bg-[#1a1b1f] border text-white font-medium uppercase rounded-full text-sm lg:text-base">UI</span>
+                                <span class="px-6 py-2 bg-[#1c37cd] border text-white font-medium uppercase rounded-full text-sm lg:text-base">Dev</span>
+                            </div>
+                        </li>
+                        <li class="border-b border-gray-400 py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Création de design systems et composants UI</span>
+                            <span class="px-6 py-2 bg-[#1a1b1f] border text-white font-medium uppercase rounded-full text-sm lg:text-base">UI</span>
+                        </li>
+                        <li class="border-b border-gray-400 py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Prototypage intéractif</span>
+                            <div class="flex items-center gap-2">
+                                <span class="px-6 py-2 border border-black font-medium uppercase rounded-full text-sm lg:text-base">UX</span>
+                                <span class="px-6 py-2 bg-[#1c37cd] border text-white font-medium uppercase rounded-full text-sm lg:text-base">Dev</span>
+                            </div>
+                        </li>
+                        <li class="py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Amélioration de l'expérience utilisateur</span>
+                            <span class="px-6 py-2 border border-black font-medium uppercase rounded-full text-sm lg:text-base">UX</span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="grid grid-cols-1 gap-4 border-y border-gray-400 py-6 lg:grid-cols-[minmax(0,_0.9fr)_minmax(0,_1.1fr)] lg:gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold lg:text-3xl">Développement Front-end</h3>
+                        <p class="font-medium">Développer, optimiser, transformer : de la maquette à une interface performante.</p>
+                    </div>
+                    <ul class="flex flex-col self-center">
+                        <li class="border-b border-gray-400 py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Intégration de maquettes</span>
+                            <span class="px-6 py-2 bg-[#1c37cd] border text-white font-medium uppercase rounded-full text-sm lg:text-base">Dev</span>
+                        </li>
+                        <li class="border-b border-gray-400 py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Développement d'interfaces responsives</span>
+                            <span class="px-6 py-2 bg-[#1c37cd] border text-white font-medium uppercase rounded-full text-sm lg:text-base">Dev</span>
+                        </li>
+                        <li class="border-b border-gray-400 py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Optimisation des performances web</span>
+                            <span class="px-6 py-2 bg-[#1c37cd] border text-white font-medium uppercase rounded-full text-sm lg:text-base">Dev</span>
+                        </li>
+                        <li class="border-b border-gray-400 py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Animations</span>
+                            <div class="flex items-center gap-2">
+                                <span class="px-6 py-2 bg-[#1c37cd] border text-white font-medium uppercase rounded-full text-sm lg:text-base">Dev</span>
+                                <span class="px-6 py-2 bg-[#1a1b1f] border text-white font-medium uppercase rounded-full text-sm lg:text-base">UI</span>
+                            </div>
+                        </li>
+                        <li class="py-4 flex justify-between items-center gap-4">
+                            <span class="text-base font-semibold lg:text-xl">Accessibilité</span>
+                            <div class="flex items-center gap-2">
+                                <span class="px-6 py-2 bg-[#1c37cd] border text-white font-medium uppercase rounded-full text-sm lg:text-base">Dev</span>
+                                <span class="px-6 py-2 border border-black font-medium uppercase rounded-full text-sm lg:text-base">UX</span>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+            </div>  
+        </section>
+        <section id="aPropos" class="bg-white py-16 relative px-4 md:px-8 md:py-20 lg:px-[6.5rem]">
+              <h2 class="font-title text-3xl font-semibold mb-8 lg:text-4xl">Parcours</h2>
+                <div class="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-2 lg:gap-32">
+                    <div class="flex flex-col justify-center gap-4 rounded-[2rem] bg-[#f3f3f2] p-6 md:p-8 lg:gap-8">
+                    <p class="font-semibold text-lg lg:text-2xl">Développeuse front-end & UI/UX Designer depuis 3 ans, je conçois des sites web alliant créativité, performance et expérience client.</p>
+                    <p class="text-base font-medium lg:text-lg">Après plusieurs années dans le secteur du tourisme, j'ai choisi de me reconvertir vers les métiers du web afin d'évoluer dans un domaine où je pourrais exprimer ma créativité au quotidien. J'ai suivi une première formation intensive de 8 mois, au cours de laquelle j'ai effectué un stage de 2 mois chez Lamour du Web. À l'issue de ce stage, j'ai souhaité aller plus loin en <strong>consolidant mes compétences techniques</strong> tout en continuant à travailler sur <strong>des projets concrets et variés</strong>. J'ai donc poursuivi mon parcours avec <strong>une alternance de 2 ans</strong>, qui m'a permis de <strong>gagner en autonomie, d'approfondir mes connaissances et de participer à la conception et au développement de sites vitrines et e-commerce.</strong></p>
+                    <p class="text-base font-medium lg:text-lg"> Aujourd'hui, je suis Développeuse Front-end & UI/UX Designer. J'apprécie autant imaginer une interface intuitive que la développer avec un <strong>code propre et performant</strong>. Cette double approche me permet de concevoir des <strong>expériences cohérentes, du besoin utilisateur jusqu'à l'intégration</strong>. Je souhaite désormais mettre ces compétences au service de <strong>projets innovants et variés</strong>.</p>
+                    <a href="assets/cv_cindy_lionis.pdf" download class="inline-block w-fit px-6 py-3 bg-[#1a1b1f] border text-white text-sm font-medium uppercase rounded-full hover:bg-transparent hover:border hover:border-black hover:text-black  transition-colors duration-300 lg:text-base">Télécharger mon CV</a>
+                </div>
+                <div class="flex flex-col gap-4 lg:gap-6">
+                    <p class="font-title text-2xl font-medium lg:text-3xl">Expérience pro.</p>
+                    <ul class="flex flex-col">
+                        <li class="border-b border-gray-400 py-4 flex flex-col gap-2">
+                            <div class="flex flex-wrap justify-between gap-x-4 gap-y-1">
+                                <span class="text-base text-gray-900 lg:text-lg">2024 - 2026</span>
+                                <span class="text-base text-gray-900 lg:text-lg">Lanester</span>
+                            </div>
+                            <span class="text-lg font-semibold lg:text-xl">Développeuse front-end & UI/UX Designer</span>
+                            <span class="text-base font-medium text-gray-900 lg:text-lg">Agence Lamour du Web & Lamour du Shop</span>
+                        </li>
+                        <li class="border-b border-gray-400 py-4 flex flex-col gap-2">
+                            <div class="flex flex-wrap justify-between gap-x-4 gap-y-1">
+                                <span class="text-base text-gray-900 lg:text-lg">2023</span>
+                                <span class="text-base text-gray-900 lg:text-lg">Lanester</span>
+                            </div>
+                            <span class="text-lg font-semibold lg:text-xl">Stagiaire développeuse front-end & UI/UX Designer</span>
+                            <span class="text-base font-medium text-gray-900 lg:text-lg">Agence Lamour du Web & Lamour du Shop</span>
+                        </li>
+                    </ul>
+                    <p class="font-title text-2xl font-medium lg:text-3xl mt-2">Formation</p>
+                    <ul class="flex flex-col">
+                        <li class="border-b border-gray-400 py-4 flex flex-col gap-2">
+                            <div class="flex flex-wrap justify-between gap-x-4 gap-y-1">
+                                <span class="text-base text-gray-900 lg:text-lg">2024 - 2026</span>
+                                <span class="text-base text-gray-900 lg:text-lg">Lanester</span>
+                            </div>
+                            <span class="text-lg font-semibold lg:text-xl">Développeur d’application JavaScript React</span>
+                            <span class="text-base font-medium text-gray-900 lg:text-lg">OpenClassrooms</span>
+                        </li>
+                        <li class="border-b border-gray-400 py-4 flex flex-col gap-2">
+                            <div class="flex flex-wrap justify-between gap-x-4 gap-y-1">
+                                <span class="text-base text-gray-900 lg:text-lg">2023</span>
+                                <span class="text-base text-gray-900 lg:text-lg">Vannes</span>
+                            </div>
+                            <span class="text-lg font-semibold lg:text-xl">Titre Professionnel Concepteur Designer UI</span>
+                            <span class="text-base font-medium text-gray-900 lg:text-lg">GRETA</span>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-black text-white py-16 px-4 md:px-8 lg:px-[6.5rem] flex flex-col">
+        <div class="flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-10">   
+            <div class="max-w-xl">
+                <svg id="Calque_2" class="w-28 md:w-40" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 367.5 195.7">
+                <defs>
+                    <style>
+                    .cls-1 {
+                        fill: #1c37cd;
+                        stroke-width: 0px;
+                    }
+
+                    .cls-2 {
+                        letter-spacing: -.06em;
+                    }
+
+                    .cls-3 {
+                        letter-spacing: -.08em;
+                    }
+
+                    .cls-4 {
+                        letter-spacing: -.06em;
+                    }
+
+                    .cls-5 {
+                        letter-spacing: -.07em;
+                    }
+
+                    .cls-6 {
+                        letter-spacing: -.06em;
+                    }
+
+                    .cls-7 {
+                        fill: #fff;
+                        font-family: PlayfairDisplay-Bold, 'Playfair Display';
+                        font-size: 100px;
+                        font-weight: 700;
+                    }
+                    </style>
+                </defs>
+                <g id="Calque_3" data-name="Calque 3">
+                    <g>
+                    <path class="cls-1" d="m3.54,101.27h46.52v28.01s1.48,39.07-46.52,44.84v-15.29s12-5.49,12-13.65H3.54v-43.9Z"/>
+                    <text class="cls-7" transform="translate(0 85.4)"><tspan class="cls-6" x="0" y="0">CIN</tspan><tspan class="cls-3" x="163.5" y="0">D</tspan><tspan class="cls-5" x="232.69" y="0">Y</tspan></text>
+                    <text class="cls-7" transform="translate(55 171.4)"><tspan class="cls-6" x="0" y="0">L</tspan><tspan class="cls-4" x="55.5" y="0">IO</tspan><tspan class="cls-2" x="159.6" y="0">NIS</tspan></text>
+                    </g>
+                </g>
+                </svg>
+                <p class="uppercase font-light">Développeuse Front-end & UI/UX Designer</p>
+                <span class="flex items-center gap-4 mt-6 text-lg lg:text-xl lg:mt-8">
+                    <i class="fa-solid fa-location-dot text-2xl"></i>
+                    Lanester
+                </span>
+                <a href="https://github.com/CindyLns" target="_blank" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                    <i class="fa-brands fa-github text-2xl"></i>
+                    Github
+                </a>
+            </div>
+            <div class="w-full max-w-xl lg:w-auto">
+                <p class="font-semibold text-xl lg:text-2xl lg:mb-4">Restons en contact</p>
+                <div class="flex flex-col">
+                    <a href="https://www.linkedin.com/in/cindy-lionis-940005174" target="_blank" class="flex items-center gap-4 border-b-[0.5px] border-gray-700 py-4 text-lg lg:text-xl">
+                        <i class="fa-brands fa-linkedin text-2xl"></i>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:cindy.lionis@gmail.com" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                        E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-700">
+        <p class="landing__credit">© 2026 Cindy Lionis</p>
+    </footer>
+    <script>
+        const menuButton = document.querySelector('[data-menu-button]');
+        const mainMenu = document.querySelector('#main-menu');
+
+        menuButton.addEventListener('click', () => {
+            const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Ouvrir le menu' : 'Fermer le menu');
+            mainMenu.classList.toggle('hidden', isOpen);
+            menuButton.classList.toggle('is-open', !isOpen);
+        });
+
+        mainMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.setAttribute('aria-label', 'Ouvrir le menu');
+                mainMenu.classList.add('hidden');
+                menuButton.classList.remove('is-open');
+            });
+        });
+    </script>
+</body>
+</html>

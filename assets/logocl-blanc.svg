@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 367.5 195.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c37cd;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-7 {
+        fill: #fff;
+        font-family: PlayfairDisplay-Bold, 'Playfair Display';
+        font-size: 100px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Calque_3" data-name="Calque 3">
+    <g>
+      <path class="cls-1" d="m3.54,101.27h46.52v28.01s1.48,39.07-46.52,44.84v-15.29s12-5.49,12-13.65H3.54v-43.9Z"/>
+      <text class="cls-7" transform="translate(0 85.4)"><tspan class="cls-6" x="0" y="0">CIN</tspan><tspan class="cls-3" x="163.5" y="0">D</tspan><tspan class="cls-5" x="232.69" y="0">Y</tspan></text>
+      <text class="cls-7" transform="translate(55 171.4)"><tspan class="cls-6" x="0" y="0">L</tspan><tspan class="cls-4" x="55.5" y="0">IO</tspan><tspan class="cls-2" x="159.6" y="0">NIS</tspan></text>
+    </g>
+  </g>
+</svg>

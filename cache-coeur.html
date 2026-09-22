@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        title: ['Playfair Display', 'serif'],
+                        corps: ['Quicksand', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cache Coeur - Portfolio Cindy Lionis</title>
+</head>
+<body class="font-corps">
+    <header class="sticky top-0 z-20 bg-white">
+            <div class="relative flex items-center justify-between gap-4 px-4 py-3 md:px-8 md:py-6 lg:px-[6.5rem]">
+                 <a href="index.html">
+                    <svg id="Calque_2" class="w-16 md:w-32" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 367.5 195.7">
+                    <defs>
+                        <style>
+                        .header-logo-cls-1 {
+                            fill: #1c37cd;
+                            stroke-width: 0px;
+                        }
+
+                        .header-logo-cls-2 {
+                            letter-spacing: -.06em;
+                        }
+
+                        .header-logo-cls-3 {
+                            letter-spacing: -.08em;
+                        }
+
+                        .header-logo-cls-4 {
+                            font-family: PlayfairDisplay-Bold, 'Playfair Display';
+                            font-size: 100px;
+                            font-weight: 700;
+                        }
+
+                        .header-logo-cls-5 {
+                            letter-spacing: -.06em;
+                        }
+
+                        .header-logo-cls-6 {
+                            letter-spacing: -.07em;
+                        }
+
+                        .header-logo-cls-7 {
+                            letter-spacing: -.06em;
+                        }
+                        </style>
+                    </defs>
+                    <g id="Calque_3" data-name="Calque 3">
+                        <g>
+                        <path class="header-logo-cls-1" d="m3.54,101.27h46.52v28.01s1.48,39.07-46.52,44.84v-15.29s12-5.49,12-13.65H3.54v-43.9Z"/>
+                        <text class="header-logo-cls-4" transform="translate(0 85.4)"><tspan class="header-logo-cls-7" x="0" y="0">CIN</tspan><tspan class="header-logo-cls-3" x="163.5" y="0">D</tspan><tspan class="header-logo-cls-6" x="232.69" y="0">Y</tspan></text>
+                        <text class="header-logo-cls-4" transform="translate(55 171.4)"><tspan class="header-logo-cls-7" x="0" y="0">L</tspan><tspan class="header-logo-cls-5" x="55.5" y="0">IO</tspan><tspan class="header-logo-cls-2" x="159.6" y="0">NIS</tspan></text>
+                        </g>
+                    </g>
+                    </svg>
+                </a>
+                <button type="button" class="menu-icon relative h-10 w-10 rounded-md md:hidden" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu" data-menu-button>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-opacity duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                </button>
+                <nav id="main-menu" class="absolute left-4 right-4 top-full z-10 hidden rounded-b-2xl bg-white p-4 shadow-lg md:static md:block md:bg-transparent md:p-0 md:shadow-none">
+                    <ul class="flex flex-col gap-4 text-sm font-semibold md:flex-row md:gap-8 md:text-xl lg:m-0">
+                        <li>
+                            <a href="index.html#projets" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Projets</a>
+                        </li>
+                        <li>
+                            <a href="index.html#aPropos" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">À propos</a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <section class="flex flex-col items-start justify-between gap-10 px-4 py-10 sm:py-14 md:px-8 md:py-14 lg:flex-row lg:items-center lg:px-[6.5rem]">
+            <div class="flex max-w-3xl flex-col gap-6 sm:gap-8">
+                <h1 class="font-title text-4xl font-bold md:text-5xl lg:text-6xl">Cache Coeur</h1>
+                <p class="text-base font-medium leading-relaxed md:text-lg lg:text-xl">Cache Cœur est une marque française fondée en 2008 à Brest, spécialisée dans la lingerie, les maillots de bain, le homewear et les accessoires (comme les bolas) pour la grossesse et l'allaitement. Elle allie savoir-faire corsetier, haute technicité et éco-responsabilité pour offrir confort, maintien et féminité aux futures et jeunes mamans tout en s'adaptant aux évolutions de leur corps.</p>
+                <a href="https://cachecoeur.com/" target="_blank" class="text-base font-semibold underline underline-offset-4 lg:text-xl">Voir le site</a>
+            </div>
+            <div class="grid w-full max-w-3xl grid-cols-1 gap-5 md:grid-cols-3 md:gap-6 lg:w-auto lg:max-w-sm lg:grid-cols-1">
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Type</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">Site e-commerce</p>
+                </div>
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Rôle</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">UX/UI Designer • Développeuse Front-End</p>
+                </div>
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Outils utilisés</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">Figma • Liquid Shopify • JavaScript</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="px-4 md:px-8 md:pb-14 lg:px-[6.5rem]">
+            <img src="assets/cachecoeur.png" class="mb-4 aspect-[4/3] w-full rounded-2xl object-cover md:aspect-[16/9] md:rounded-[2rem]" alt="projet Cache Cœur"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:pb-14 md:pt-0 lg:px-[6.5rem]">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase md:text-xl">objectifs</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Moderniser l’identité visuelle</strong><br>
+                        Repenser le webdesign pour offrir au site une interface plus actuelle, cohérente avec l’image de marque et plus attractive. L’objectif était de créer une identité visuelle plus forte, tout en conservant l’univers existant de la marque.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Améliorer l’expérience utilisateur</strong><br>
+                        Simplifier la navigation et clarifier les différents parcours pour permettre aux utilisateurs de trouver plus facilement les informations et les produits recherchés. L’enjeu était de rendre l’expérience plus intuitive, fluide et agréable, aussi bien sur desktop que sur mobile.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Optimiser les performances</strong><br>
+                        Améliorer les temps de chargement et les performances globales du site afin de proposer une expérience plus rapide et fluide. Une attention particulière a été portée à l’expérience mobile, essentielle dans le parcours d’achat.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Renforcer l’efficacité du site e-commerce</strong><br>
+                        Optimiser la présentation des produits et le parcours d’achat afin de faciliter la prise de décision et limiter les points de friction. L’objectif était de rendre le parcours plus clair et efficace, tout en favorisant la conversion.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <img src="assets/cacheCoeur1.svg" class="w-full object-contain mb-4" alt="Ecrans boutique Shopify Cache Coeur"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:pb-20 md:pt-10 lg:px-[6.5rem]">
+            <div>
+                <h2 class="font-title text-3xl font-bold lg:text-5xl">Processus</h2>
+            </div>
+            <hr class="my-6 md:my-12 border-t border-black">
+            <div class="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase lg:text-xl">Conception et développement</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-8 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">J'ai participé au projet sur la conception UX/UI et le développement Front-End Shopify, de la création des interfaces sur Figma jusqu'à l'intégration d'un thème personnalisé basé sur Horizon.
+                    </p>
+                    <div class="mb-8">
+                        <p class="mb-4 text-lg font-bold lg:text-2xl">Conception UX/UI
+                        </p>
+                        <p class="text-base font-medium leading-relaxed md:text-xl lg:text-2xl">
+                            La première phase du projet a consisté à concevoir les maquettes desktop et mobile sur Figma. J'ai travaillé sur la refonte des parcours utilisateurs, du méga menu et sur la restructuration des fiches produits afin de simplifier la navigation et d'améliorer l'expérience d'achat.
+                        </p>
+                    </div>
+                    <p class="mb-4 text-lg font-bold lg:text-2xl">Développement Front-End</p>
+                    <ul class="list-arrow">
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Personnalisation du thème Horizon</strong> : création de nombreuses sections personnalisées et entièrement administrables depuis l’éditeur Shopify.</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Expérience utilisateur & navigation</strong> : amélioration de la navigation entre les collections, travail sur les cartes produits, effets de hover et personnalisation du panier.</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>SEO & architecture du site</strong> : optimisation du maillage interne afin de faciliter la navigation des utilisateurs.</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Optimisation de la visibilité des offres</strong> : intégration de blocs promotionnels directement dans les pages collections pour valoriser certaines offres ou catégories.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#F1EBE0] rounded-t-[2rem] flex flex-wrap items-center justify-center gap-4 py-14 px-4 md:gap-8 md:py-40 lg:gap-16 lg:px-[6.5rem] lg:rounded-t-[8rem]">
+            <img src="assets/collectionCacheCoeur.png" class="w-[calc(50%-0.5rem)] max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)] md:w-auto" alt="Ecran mobile boutique Shopify page collection Cache Coeur"/>
+            <img src="assets/collectionCacheCoeur2.png" class="w-[calc(50%-0.5rem)] max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)] md:w-auto" alt="Ecran mobile boutique Shopify page collection Cache Coeur"/>
+            <img src="assets/menuCacheCoeur.png" class="w-[calc(50%-0.5rem)] max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)] md:w-auto" alt="Ecran mobile boutique Shopify page menu Cache Coeur"/>
+            <img src="assets/panierCacheCoeur.png" class="w-[calc(50%-0.5rem)] max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)] md:w-auto" alt="Ecran mobile boutique Shopify page panier Cache Coeur"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:py-14 lg:px-[6.5rem]">
+            <div>
+                <h2 class="font-title text-3xl font-bold lg:text-5xl">Impact</h2>
+            </div>
+            <hr class="my-6 md:my-12 border-t border-black">
+            <div class="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase lg:text-xl">Une expérience e-commerce repensée pour faciliter la navigation et la conversion</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-4 text-base font-medium leading-relaxed md:text-lg lg:text-2xl lg:mb-8">La refonte a permis de concevoir une <strong>boutique Shopify plus performante</strong>, avec une <strong>navigation plus fluide</strong> et une meilleure <strong>conversion</strong>. Le site a été profondément personnalisé afin de répondre aux besoins spécifiques du client, tout en lui <strong>offrant davantage d'autonomie dans la gestion de ses contenus</strong>.
+                    </p>
+                    <ul class="list-arrow">
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Une navigation plus claire entre les collections</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Une expérience utilisateur enrichie</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Une meilleure mise en avant des produits et promotions</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Une structure plus cohérente pour le SEO</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:py-20 lg:px-[6.5rem]">
+                <a href="mouratoglou.html" class="flex flex-col gap-8 md:flex-row md:items-center">
+                    <img src="assets/mouratoglou.png" class="order-2 w-full rounded-[2rem] aspect-[16/9] object-cover md:order-1 md:w-[40%] md:shrink-0" alt="projet Mouratoglou"/>
+                <div class="order-1 flex flex-col gap-4 md:order-2">
+                    <p class="w-fit rounded-sm bg-[#f3f3f2] px-2 py-1 text-base font-medium uppercase md:text-lg lg:text-xl">Projet suivant</p>
+                    <h3 class="font-title text-2xl font-bold md:text-3xl lg:text-4xl">Mouratoglou</h3>
+                    <p class="text-base font-medium leading-relaxed lg:text-lg">Lancée en 2023 par Patrick Mouratoglou, Mouratoglou Apparel est une marque de vêtements de sport inspirée par l’univers du tennis et par l’exigence du sport de haut niveau. La marque ambitionne de dépasser les frontières du court pour proposer un vestiaire à la fois performant, élégant et accessible, pensé aussi bien pour la pratique sportive que pour le quotidien.</p>
+                </div>
+            </a>
+        </section>
+       
+    </main>
+
+    <footer id="footer" class="bg-black text-white py-16 px-4 md:px-8 lg:px-[6.5rem] flex flex-col">
+        <div class="flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-10">   
+            <div class="max-w-xl">
+                <svg id="Calque_2" class="w-28 md:w-40" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 367.5 195.7">
+                <defs>
+                    <style>
+                    .cls-1 {
+                        fill: #1c37cd;
+                        stroke-width: 0px;
+                    }
+
+                    .cls-2 {
+                        letter-spacing: -.06em;
+                    }
+
+                    .cls-3 {
+                        letter-spacing: -.08em;
+                    }
+
+                    .cls-4 {
+                        letter-spacing: -.06em;
+                    }
+
+                    .cls-5 {
+                        letter-spacing: -.07em;
+                    }
+
+                    .cls-6 {
+                        letter-spacing: -.06em;
+                    }
+
+                    .cls-7 {
+                        fill: #fff;
+                        font-family: PlayfairDisplay-Bold, 'Playfair Display';
+                        font-size: 100px;
+                        font-weight: 700;
+                    }
+                    </style>
+                </defs>
+                <g id="Calque_3" data-name="Calque 3">
+                    <g>
+                    <path class="cls-1" d="m3.54,101.27h46.52v28.01s1.48,39.07-46.52,44.84v-15.29s12-5.49,12-13.65H3.54v-43.9Z"/>
+                    <text class="cls-7" transform="translate(0 85.4)"><tspan class="cls-6" x="0" y="0">CIN</tspan><tspan class="cls-3" x="163.5" y="0">D</tspan><tspan class="cls-5" x="232.69" y="0">Y</tspan></text>
+                    <text class="cls-7" transform="translate(55 171.4)"><tspan class="cls-6" x="0" y="0">L</tspan><tspan class="cls-4" x="55.5" y="0">IO</tspan><tspan class="cls-2" x="159.6" y="0">NIS</tspan></text>
+                    </g>
+                </g>
+                </svg>
+                <p class="uppercase font-light">Développeuse Front-end & UI/UX Designer</p>
+                <span class="flex items-center gap-4 mt-6 text-lg lg:text-xl lg:mt-8">
+                    <i class="fa-solid fa-location-dot text-2xl"></i>
+                    Lanester
+                </span>
+                <a href="https://github.com/CindyLns" target="_blank" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                    <i class="fa-brands fa-github text-2xl"></i>
+                    Github
+                </a>
+            </div>
+            <div class="w-full max-w-xl lg:w-auto">
+                <p class="font-semibold text-xl lg:text-2xl lg:mb-4">Restons en contact</p>
+                <div class="flex flex-col">
+                    <a href="https://www.linkedin.com/in/cindy-lionis-940005174" target="_blank" class="flex items-center gap-4 border-b-[0.5px] border-gray-700 py-4 text-lg lg:text-xl">
+                        <i class="fa-brands fa-linkedin text-2xl"></i>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:cindy.lionis@gmail.com" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                        E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-700">
+        <p class="landing__credit">© 2026 Cindy Lionis</p>
+    </footer>
+    <script>
+        const menuButton = document.querySelector('[data-menu-button]');
+        const mainMenu = document.querySelector('#main-menu');
+
+        menuButton.addEventListener('click', () => {
+            const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Ouvrir le menu' : 'Fermer le menu');
+            mainMenu.classList.toggle('hidden', isOpen);
+            menuButton.classList.toggle('is-open', !isOpen);
+        });
+
+        mainMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.setAttribute('aria-label', 'Ouvrir le menu');
+                mainMenu.classList.add('hidden');
+                menuButton.classList.remove('is-open');
+            });
+        });
+    </script>
+</body>
+</html>

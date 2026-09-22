@@ -1,0 +1,66 @@
+.circleMove svg {
+  animation: spin 15s linear infinite;
+}
+
+.menu-icon span {
+  transform: translateY(-50%);
+}
+
+.menu-icon span:first-child {
+  transform: translateY(calc(-50% - 8px));
+}
+
+.menu-icon span:last-child {
+  transform: translateY(calc(-50% + 8px));
+}
+
+.menu-icon.is-open span:first-child {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.menu-icon.is-open span:last-child {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu-icon.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.list-arrow > li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.35em;
+  width: 15px;
+  height: 16px;
+  background-color: #1c37cd;
+  mask: url("assets/arrow.svg") center / contain no-repeat;
+  -webkit-mask: url("assets/arrow.svg") center / contain no-repeat;
+}
+
+.list-arrow > li {
+  position: relative;
+  counter-increment: list-item;
+  padding-inline-start: 2.25ch;
+  list-style: none;
+}
+
+@media screen and (min-width: 990px) {
+    section.section-sticky{
+        position: sticky;
+        top: 0px;
+        z-index: 0;
+    }
+    section.section {
+        position: relative;
+        z-index: 1;
+    }
+
+}
+
